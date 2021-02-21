@@ -6,4 +6,5 @@ class NewSpider(scrapy.Spider):
         css_selector = 'img'
         for x in response.css(css_selector):newsel = '@src'
         yield {
-              'Image Link': x.xpath(newsel).extract_first(),}                                                                                                                                          }
+              'Image Link': x.xpath(newsel).extract_first(),}
+        }
